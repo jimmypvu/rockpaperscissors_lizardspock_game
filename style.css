@@ -132,13 +132,13 @@ body {
 
 .blinking {
 
-    animation: opacity 1.05s ease-in-out infinite;
+    animation: opacity 1.02s ease-in-out infinite;
     opacity: 1;
 }
 
 @keyframes opacity {
   0% {
-    opacity: .42;
+    opacity: .44;
   }
 
   50% {
@@ -146,7 +146,7 @@ body {
   }
 
   100% {
-    opacity: .85;
+    opacity: .88;
   }
 }
 
