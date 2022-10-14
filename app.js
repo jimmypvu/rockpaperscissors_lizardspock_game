@@ -3,6 +3,21 @@ let computerChoiceDisplay = document.querySelector('#computerChoiceText')
 let playerChoiceDisplay = document.querySelector('#playerChoiceText')
 let resultDisplay = document.querySelector('#resultText')
 let resultDesc = document.querySelector('#resultDiv')
+let computerChoiceImg = document.querySelectorAll('img')
+
+function imgGenerate(){
+    if(computerChoice === "rock"){
+    document.querySelector('#modalResult').innerHTML = '<img src="Rock.svg" id="rock" class="button trigger"/>'
+}else if(computerChoice ==="paper"){
+    document.querySelector('#modalResult').innerHTML = '<img src="Paper.svg" id="paper" class="button trigger"/>'
+}else if(computerChoice ==="scissors"){
+    document.querySelector('#modalResult').innerHTML = '<img src="Scissors.svg" id="scissors" class="button trigger"/>'
+}else if(computerChoice ==="lizard"){
+    document.querySelector('#modalResult').innerHTML = '<img src="Lizard.svg" id="lizard" class="button trigger"/>'
+}else if(computerChoice ==="spock"){
+    document.querySelector('#modalResult').innerHTML = '<img src="Spock.svg" id="Spock" class="button trigger"/>'
+}
+}
 
 //select all buttons
 let possibleChoices = document.querySelectorAll('.button')
@@ -113,3 +128,25 @@ function scoreUpdate(){
     resultDisplay.style.color = "white";
 }  
 }
+
+//modal js here
+const modal = document.querySelector(".modal");
+const trigger = document.querySelectorAll(".trigger");
+const closeButton = document.querySelector(".close-button");
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+    winnerCheck()
+    imgGenerate()
+    //document.querySelector('#modalResult').innerHTML = '<span id="resultDiv" class="hidden">---</span>'
+}
+
+/*function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}*/
+
+trigger.forEach(addEventListener("click", toggleModal));
+//closeButton.addEventListener("click", toggleModal);
+//window.addEventListener("click", windowOnClick);
