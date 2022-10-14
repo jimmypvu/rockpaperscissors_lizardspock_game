@@ -154,7 +154,7 @@ function toggleModal() {
     imgGenerate()
     imgGenerateUser()
     if(modal.classList.contains("show-modal")){
-        setTimeout(toggleModal, 750)
+        setTimeout(toggleModal, 900)
         clearTimeout()
     } 
     //document.querySelector('#modalResult').innerHTML = '<span id="resultDiv" class="hidden">---</span>'
