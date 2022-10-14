@@ -181,7 +181,7 @@ div.middle {
     visibility: hidden;
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
 
 .modal-content {
