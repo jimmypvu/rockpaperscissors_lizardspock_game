@@ -141,12 +141,12 @@ function toggleModal() {
     //document.querySelector('#modalResult').innerHTML = '<span id="resultDiv" class="hidden">---</span>'
 }
 
-/*function windowOnClick(event) {
+function windowOnClick(event) {
     if (event.target === modal) {
         toggleModal();
     }
-}*/
+}
 
 trigger.forEach(addEventListener("click", toggleModal));
-//closeButton.addEventListener("click", toggleModal);
-//window.addEventListener("click", windowOnClick);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
