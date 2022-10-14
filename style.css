@@ -190,7 +190,7 @@ div.middle {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
-    color: white;
+    color: rgba(255,255,255,.90);
     padding: 1rem 1.5rem;
     width: 24rem;
     border-radius: 0.5rem;
