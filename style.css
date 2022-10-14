@@ -51,13 +51,13 @@ h1{
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    padding-top: 19%;
+    padding-top: 24%;
 }
 
 #resultDiv{
     display: block;
     text-align: center;
-    padding-top: 30%;
+    padding-top: 26%;
     font-size: smaller;
     font-style: italic;
 }
@@ -172,11 +172,11 @@ div.middle {
     position: absolute;
     display: flex;
     justify-content: center;
-    left: 10%;
+    left: 25%;
     top: 5%;
-    width: 80%;
+    width: 50%;
     height: 90%;
-    background-color: rgba(45, 45, 45, .6);
+    background-color: rgba(0, 0, 0, 0.7);
     opacity: 1;
     visibility: hidden;
     transform: scale(1.1);
@@ -190,7 +190,7 @@ div.middle {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
-    color: rgba(255,255,255,.90);
+    color: rgba(255,255,255, .95);
     padding: 1rem 1.5rem;
     width: 24rem;
     border-radius: 0.5rem;
@@ -215,7 +215,7 @@ div.middle {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.2s 0s, transform 0.2s;
 }
 
 #modalResult{
@@ -225,16 +225,31 @@ div.middle {
     padding: 15% 0;
 }
 
+#modalResultUser{
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    padding: 3% 0;
+    margin-top: -3%;
+    margin-bottom: 3%;
+}
+
+span+span{
+    padding-top: 0;
+    margin-bottom: 9%;  
+}
+
 span+h4{
     font-size: 1.5rem;
     display: flex;
     justify-content: flex-start;
     margin-bottom: -3rem;
     padding-left: 2rem;
-    padding-top: 8rem;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 label{
-    text-align: end;
     vertical-align: bottom;
 }

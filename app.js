@@ -14,8 +14,22 @@ function imgGenerate(){
     document.querySelector('#modalResult').innerHTML = '<img src="Scissors.svg" id="scissors" class="button trigger"/>'
 }else if(computerChoice ==="lizard"){
     document.querySelector('#modalResult').innerHTML = '<img src="Lizard.svg" id="lizard" class="button trigger"/>'
-}else if(computerChoice ==="spock"){
+}else if(computerChoice ==="Spock"){
     document.querySelector('#modalResult').innerHTML = '<img src="Spock.svg" id="Spock" class="button trigger"/>'
+}
+}
+
+function imgGenerateUser(){
+    if(playerChoice === "rock"){
+    document.querySelector('#modalResultUser').innerHTML = '<img src="Rock.svg" id="rock" class="button trigger"/>'
+}else if(playerChoice ==="paper"){
+    document.querySelector('#modalResultUser').innerHTML = '<img src="Paper.svg" id="paper" class="button trigger"/>'
+}else if(playerChoice ==="scissors"){
+    document.querySelector('#modalResultUser').innerHTML = '<img src="Scissors.svg" id="scissors" class="button trigger"/>'
+}else if(playerChoice ==="lizard"){
+    document.querySelector('#modalResultUser').innerHTML = '<img src="Lizard.svg" id="lizard" class="button trigger"/>'
+}else if(playerChoice ==="Spock"){
+    document.querySelector('#modalResultUser').innerHTML = '<img src="Spock.svg" id="Spock" class="button trigger"/>'
 }
 }
 
@@ -138,6 +152,11 @@ function toggleModal() {
     modal.classList.toggle("show-modal");
     winnerCheck()
     imgGenerate()
+    imgGenerateUser()
+    if(modal.classList.contains("show-modal")){
+        setTimeout(toggleModal, 750)
+        clearTimeout()
+    } 
     //document.querySelector('#modalResult').innerHTML = '<span id="resultDiv" class="hidden">---</span>'
 }
 
