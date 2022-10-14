@@ -132,13 +132,13 @@ body {
 
 .blinking {
 
-    animation: opacity 1s ease-in-out infinite;
+    animation: opacity 1.05s ease-in-out infinite;
     opacity: 1;
 }
 
 @keyframes opacity {
   0% {
-    opacity: 1;
+    opacity: .42;
   }
 
   50% {
@@ -146,7 +146,7 @@ body {
   }
 
   100% {
-    opacity: 1;
+    opacity: .85;
   }
 }
 
@@ -175,7 +175,7 @@ div.middle {
     top: 5%;
     width: 50%;
     height: 90%;
-    background-color: rgba(9, 9, 9, 0.8);
+    background-color: rgba(9, 9, 9, 0.87);
     color: rgba(255, 255, 255,.9);
     opacity: 1;
     visibility: hidden;
@@ -253,9 +253,16 @@ span+h4{
 }
 
 label{
+    text-align: end;
     vertical-align: bottom;
+    margin-top: 4rem;
 }
 
 .modal-Content img{
  opacity: 1;
+}
+
+.modal{
+    display:flex;
+    justify-content: space-evenly;
 }
