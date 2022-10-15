@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="left">
+        <h2 id="player">PLAYER</h2><span id="playerChoiceText"></span>
+    </div>
+    <div id="right">    
+        <h2 id="computer">COMPUTER</h2><span id="computerChoiceText"></span>
+    </div>
+        
+    <div id="scoreDiv">
+        <h1 id="score">SCORE: <p id="playerScoreText" class="scoreText">0</p> - <p id="computerScoreText" class="scoreText">0</p></h1>
+    </div>
+
+    <span id="resultDiv" class="hidden">---</span>
+
+    <div class="middle blinking">
+        <h3 id="resultText" class="hidden">-</h3><h3 class="wins">wins!</h3>
+    </div>
+
+    <div id="controls">
+        <img src="Rock.svg" id="rock" class="button"/>
+        <img src="Paper.svg" id="paper" class="button"/>
+        <img src="Scissors.svg" id="scissors" class="button"/>
+        <img src="Lizard.svg" id="lizard" class="button"/>
+        <img src="Spock.svg" id="Spock" class="button"/>
+    </div>
+
+	<script src="app.js"></script>
+  </body>
+</html>

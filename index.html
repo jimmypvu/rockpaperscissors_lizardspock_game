@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="left">
+        <h2 id="player">PLAYER</h2><span id="playerChoiceText"></span>
+    </div>
+    <div id="right">    
+        <h2 id="computer">COMPUTER</h2><span id="computerChoiceText"></span>
+    </div>
+        
+    <div id="scoreDiv">
+        <h1 id="score">SCORE: <p id="playerScoreText" class="scoreText">0</p> - <p id="computerScoreText" class="scoreText">0</p></h1>
+    </div>
+
+    <span id="resultDiv" class="hidden">---</span>
+
+    <div class="middle blinking">
+        <h3 id="resultText" class="hidden">-</h3><h3 class="wins">wins!</h3>
+    </div>
+
+    <div id="controls">
+        <label for="rock">r</label>
+        <img src="Rock.svg" id="rock" class="button trigger"/>
+        <label for="paper">p</label>
+        <img src="Paper.svg" id="paper" class="button trigger"/>
+        <label for="scissors">s</label>
+        <img src="Scissors.svg" id="scissors" class="button trigger"/>
+        <label for="lizard">l</label>
+        <img src="Lizard.svg" id="lizard" class="button trigger"/>
+        <label for="Spock">S</label>
+        <img src="Spock.svg" id="Spock" class="button trigger"/>
+    </div>
+
+    <div class="modal">
+      <div class="modal-Content">
+        <span class="close-button"><!---&times;---></span>
+        <h4>computer chose</h4>
+        <span id="modalResult" class="hidden"></span>
+        <span id="modalResultUser" class="hidden"></span>
+        <h3>you chose</h3>
+      </div>
+    </div>
+
+	<script src="app.js"></script>
+  </body>
+</html>
