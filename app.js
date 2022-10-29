@@ -36,7 +36,7 @@ function imgGenerateUser(){
 //select all buttons
 let possibleChoices = document.querySelectorAll('.button')
 
-//put a smurf on each button to listen for clicks, on click display choice in userChoiceDisplay
+//put a smurf on each button to listen for clicks, on click display choice in playerChoiceDisplay
 possibleChoices.forEach((button)=>button.addEventListener('click',(e)=>{
     playerChoice = e.target.id
     playerChoiceDisplay.innerText = playerChoice
