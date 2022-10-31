@@ -5,6 +5,7 @@ let resultDisplay = document.querySelector('#resultText')
 let resultDesc = document.querySelector('#resultDiv')
 let computerChoiceImg = document.querySelectorAll('img')
 
+//render image of computer's choice
 function imgGenerate(){
     if(computerChoice === "rock"){
     document.querySelector('#modalResult').innerHTML = '<img src="Rock.svg" id="rock" class="button trigger"/>'
@@ -19,6 +20,7 @@ function imgGenerate(){
 }
 }
 
+//render image of player's choice
 function imgGenerateUser(){
     if(playerChoice === "rock"){
     document.querySelector('#modalResultUser').innerHTML = '<img src="Rock.svg" id="rock" class="button trigger"/>'
@@ -33,7 +35,7 @@ function imgGenerateUser(){
 }
 }
 
-//select all buttons
+//select all buttons on page
 let possibleChoices = document.querySelectorAll('.button')
 
 //put a smurf on each button to listen for clicks, on click display choice in playerChoiceDisplay
@@ -143,6 +145,13 @@ function scoreUpdate(){
 }  
 }
 
+//declare a winner at 5 points
+/*function winnerDeclare(){
+    if(playerScore==5){
+        document.querySelector('.endgameModal').classList.toggle('.endgameModalHider')
+    }
+}*/
+
 //modal js here
 const modal = document.querySelector(".modal");
 const trigger = document.querySelectorAll(".trigger");
@@ -167,5 +176,5 @@ function windowOnClick(event) {
 }
 
 trigger.forEach(addEventListener("click", toggleModal));
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
+//closeButton.addEventListener("click", toggleModal);
+//window.addEventListener("click", windowOnClick);
